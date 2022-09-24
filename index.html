@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JustDessert</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Just<span style="color:orange">Dessert</span></h1>
+                <div class="btns">
+                    <button onclick="remove(this)" id="join">Join</button>
+                    <button class="login">Login</button>
+                </div>
+            </div>
+                <div class="header1">
+                    <div class="searchbar">
+                    <input type="search" name="Search" placeholder="SEARCH" id="search"><button id="go" onclick="go()">GO</button>
+                    </div>
+                    <div class="list1">
+                        <table class="table">
+                                <thead class="cakeimg1">
+                                    <tr>
+                                        <th><img src="cake.png" alt="cake img" class="cakeimg"></th>
+                                        <th><img src="ice-cream.png" alt="ice cream" class="ice-creamimg"></th>
+                                        <th><img src="cookie.png" alt="cookie img" class="cookieimg"></th>
+                                        <th><img src="pie.png" alt="pie img" class="pieimg"></th>
+                                    </tr>
+                                </thead>
+                                    <tbody class="dessertnames1">
+                                        <tr>
+                                            <td>Cakes</td>
+                                            <td>Ice Cream</td>
+                                            <td>Cookies</td>
+                                            <td>Pies</td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+                    </div>
+                </div>
+            <div class="container2">
+                <div class="leftcolumn">
+                    <h3 class="title1">Recipe of the Day</h3>
+                    <img src="orange-tart.jpg" alt="orange tart" class="orangetart">
+                    <div class="content1">
+                        <p class="author">Orange Tea Jelly Tart</p>
+                        <div class="likebtn">
+                            <img src="heart.png" alt="heart" id="heart1" onclick="like(0)"><p id="num1">68</p>
+                        </div>
+                    </div>
+                    <div class="author1">
+                        <p>by: <a href="">yuripiano</a></p>
+                    </div>
+                    <div class="bottomlink">
+                        <a href="">See Full Recipe</a>
+                    </div>
+                </div>
+                <div class="rightcolumn">
+                    <div class="titles2">
+                        <h3><strong>Recommended for you:</strong></h3>
+                    </div>
+                        <div class="recipe1">
+                            <img src="macarons.jpg" alt="macarons" class="macaron">
+                            <div class="boxer1">
+                                <p class="author2">Macarons<br>By: <a href="">EmilieW</a></p>
+                                <div class="likes2">
+                                    <img src="heart.png" alt="heart" id="heart2" onclick="like(1)"><p id="num2">212</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recipe2">
+                            <img src="creme-brulee.jpg" alt="creme-brulee" class="creme">
+                            <div class="boxer2">
+                            <p class="author3">Creme Brulee<br>By: <a href="">MarisaG</a></p>
+                            <div class="likes3">
+                                <img src="heart.png" alt="heart" id="heart3" onclick="like(2)"><p id="num3">33</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
